@@ -28,9 +28,9 @@ fi
 
 #pobieranie instalek
 echo -e "Downloading Splunk and Universal Forwarder"
-#wget -O splunk-8.1.2-545206cc9f70-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.1.2&product=splunk&filename=splunk-8.1.2-545206cc9f70-Linux-x86_64.tgz&wget=true' -O $pathinstall/splunk.tgz
+wget -O splunk-8.1.2-545206cc9f70-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.1.2&product=splunk&filename=splunk-8.1.2-545206cc9f70-Linux-x86_64.tgz&wget=true' -O $pathinstall/splunk.tgz
 
-#wget -O splunkforwarder-8.1.2-545206cc9f70-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.1.2&product=universalforwarder&filename=splunkforwarder-8.1.2-545206cc9f70-Linux-x86_64.tgz&wget=true' -O $pathinstall/splunkforwarder.tgz
+wget -O splunkforwarder-8.1.2-545206cc9f70-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=8.1.2&product=universalforwarder&filename=splunkforwarder-8.1.2-545206cc9f70-Linux-x86_64.tgz&wget=true' -O $pathinstall/splunkforwarder.tgz
 echo -e "Done"
 #rozpakowanie i przygotowanie wzorcowych paczek 
 echo -e "Checking of directory /opt/install/"
@@ -182,8 +182,8 @@ else
     echo -e "Didn't create Universal Forwarder"
 fi
 echo -e "Clearing of unused files"
-#rm -rf /opt/splunk
-#rm -rf /opt/splunkforwarder
+rm -rf /opt/splunk
+rm -rf /opt/splunkforwarder
 
 echo -e "Configuration was exported to /opt/splunk.conf"
 echo -e "Thank you for using me :)"
